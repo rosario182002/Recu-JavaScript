@@ -4,7 +4,7 @@ Se muestar la cuenta regresiva de las horas, minutos y segundos que faltan para 
 Debe mostrarlo con el fromato: HH:MM:SS. Las horas, minutos y segundos tiene que tener dos dígitos.
 */
 // Ejecuta la función cuentaAtras cada 1000 milisegundos (es decir, cada segundo)
-var temporizador = setInterval(cuentaAtras, 1000);
+var temporizador; 
 
 // Esta es la función que calcula cuánto falta para que termine el día (a medianoche)
 var cuentaAtras = () => {
@@ -38,3 +38,21 @@ var cuentaAtras = () => {
     document.getElementById("tiempo").value = 
         `${dosDigitos(horas)}:${dosDigitos(minutos)}:${dosDigitos(segundos)}`;
 };
+
+
+//Forma Belén
+actualizarReloj = () =>{
+    var tiempo = new Date();
+
+    var hora = 23-tiempo.getHours();
+    var minutos = 59-tiempo.getMinutes();
+    var segundos = 59-tiempo.getSeconds();
+
+    tiempoAtras = (hora <10) ? "0"+hora : hora;
+    tiempoAtras += ((minutos <10) ? (":0"+minutos) : ":" + minutos);
+    tiempoAtras += ((segundos <10) ? (":0"+segundos) : ":" + segundos);
+
+    document.getElementById("tiempo").value = tiempoAtras;
+}
+
+setInterval(actualizarReloj, 1000);

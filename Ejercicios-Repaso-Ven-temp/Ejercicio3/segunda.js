@@ -1,6 +1,6 @@
-window.onload = function () {
-    const input = document.getElementById("textoInput");
-    const boton = document.getElementById("enviarBtn");
+
+    const input = document.getElementById("texto");
+    const boton = document.getElementById("enviar");
   
     boton.addEventListener("click", () => {
       const texto = input.value.trim();
@@ -9,10 +9,10 @@ window.onload = function () {
         alert("Por favor, escribe algo.");
       } else {
         // Enviar el texto a la ventana principal
-        window.opener.postMessage({ texto: texto }, "*");
+        window.opener.document.getElementById("mensaje").innerHTML=texto;
         // Cerrar esta ventana
         window.close();
       }
     });
-  };
+
   
