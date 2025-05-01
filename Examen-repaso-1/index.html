@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <script src="js/index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .mensaje-error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="mb-4">Iniciar Sesión</h2>
+
+          <form id="formularioLogin" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="usuario">Usuario:</label>
+              <input
+                name="usuario"
+                type="text"
+                class="form-control"
+                id="usuario"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="clave">Provincia:</label>
+              <select name="provincia" id="provincia" class="form-control">
+                <option value="0" selected="selected">
+                  Seleccionar Provincia
+                </option>
+                <option value="11">Cádiz</option>
+                <option value="41">Sevilla</option>
+                <option value="29">Málaga</option>
+                <option value="21">Huelva</option>
+                <option value="14">Córdoba</option>
+                <option value="18">Granada</option>
+                <option value="23">Jaén</option>
+                <option value="04">Almería</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cpostal">Código Postal:</label>
+              <input
+                name="cpostal"
+                type="text"
+                id="cpostal"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="clave">Clave:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="clave"
+                name="clave"
+                title="La clave debe tener al menos 8 caracteres"
+              />
+              <div class="invalid-feedback" id="error"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="b1">
+              Iniciar Sesión
+            </button>
+          </form>
+
+          <div id="mensajeError" class="mensaje-error mt-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enlace a Bootstrap JS y Popper.js (necesarios para el funcionamiento de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
