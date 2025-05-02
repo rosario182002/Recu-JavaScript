@@ -70,6 +70,8 @@ const receta = {
         });
       });
     }
+
+    
     function hornear() {
         let tiempo = 10;
       

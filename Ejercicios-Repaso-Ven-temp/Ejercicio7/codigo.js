@@ -1,7 +1,7 @@
 document.getElementById("boton").addEventListener("click", function () {
         // Obtener los valores del formulario
         const nombre = document.getElementById("nombre").value.trim();
-        const asignatura = document.querySelector('input[name="asig"]:checked');
+        const asignatura = document.getElementById("asignatura");
         const calificacion = document.getElementById("notas").value;
     
         // Validar que todos los campos estén cumplimentados

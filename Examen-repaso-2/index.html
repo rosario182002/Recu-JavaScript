@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Incidencias</title>
+    <script src="js/index.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1 {
+            color: rgb(204, 136, 9);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4 ">Sistema de Búsqueda de Incidencias</h1>
+        <form id="searchForm" class="p-3 border rounded bg-light">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="searchId">ID:</label>
+                    <input type="number" id="searchId" class="form-control" placeholder="Ingrese ID">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="searchAsunto">Asunto:</label>
+                    <input type="text" id="searchAsunto" class="form-control" placeholder="Ingrese Asunto">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="searchDescripcion">Descripción:</label>
+                    <input type="text" id="searchDescripcion" class="form-control" placeholder="Ingrese Descripción">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="searchEstado">Estado:</label>
+                    <select id="searchEstado" class="form-control">
+                        <option value="Todas">Todas</option>
+                        <option value="Abierta">Abiertas</option>
+                        <option value="Cerrada">Cerradas</option>
+                        <option value="Pendiente">Pendientes de mí</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="searchButton" class="btn btn-primary active">Buscar</button>
+        </form>
+        <div id="resultado" class="mt-4"></div>
+    </div>
+</body>
+</html> 
