@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: darkseagreen;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f8f9fa;
+        }
+      
+   
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-success">Sistema de Gestión de Inventario</h1>
+        <div class="form-row mb-3">
+            <div class="col">
+                <input type="text" id="searchId" class="form-control" placeholder="Buscar por ID">
+            </div>
+            <div class="col">
+                <input type="text" id="searchNombre" class="form-control" placeholder="Buscar por Nombre">
+            </div>
+            <div class="col">
+                <input type="text" id="searchDescripcion" class="form-control" placeholder="Buscar por Descripción">
+            </div>
+            <div class="col">
+                <input type="number" id="searchCantidad" class="form-control" placeholder="Buscar por Cantidad">
+            </div>
+            <div class="col">
+                <button class="btn btn-success" id="searchButton">Buscar</button>
+            </div>
+        </div>
+        <div id="mensaje"></div>
+        <div id="resultado"></div>
+    </div>
+
+</body>
+</html>
