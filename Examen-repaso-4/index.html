@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="js/index.js"></script>
+    <title>Mi Librería</title>
+    <style>
+      body {
+        background-image: url("imagen_fondo.jpg"); /* Ruta de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 50px;
+      }
+
+      #libreria-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      #fecha {
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 20%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin: 5px;
+      }
+
+      .abs-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100h;
+      }
+      .cuadro {
+        width: 50px;
+        padding: 5px;
+        margin: 2px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="libreria-container">
+      <img src="imagen_libreria.jpg" alt="Imagen de la librería" />
+      <h1>Librería CEU</h1>
+
+      <div id="fecha"></div>
+
+      <button class="btn btn-primary" id="cargar">Cargar Libros</button>
+      <button class="btn btn-success" id="comprar">Comprar Libros</button>
+      <button class="btn btn-danger" id="ofertas">OFERTAS</button>
+
+      <div class="abs-center">
+        <div id="libros"></div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js son necesarios para el funcionamiento de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
