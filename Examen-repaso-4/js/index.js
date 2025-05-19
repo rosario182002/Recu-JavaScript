@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(){
             titulos.forEach((titulo, index)=>{
                 tablaHTML += `
                 <tr>
-                    <td>${index +1}. ${titulo}</td>
+                    <td class="titulo">${index +1}. ${titulo}</td>
                     <td><input type="text" value="0" class="cuadro"></td>
                 </tr>
                 `;
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(){
         function comprarLibro (){
 
             //obtenemos TODOS los inputs de la tabla
-            const inputs = document.getElementsByClassName("cuadro");
+            const inputs = Array.from(document.getElementsByClassName("cuadro"));
             let hayLibros = false;
             
             //verificamos si hay al menos un libro con cantidad mayor a 0
