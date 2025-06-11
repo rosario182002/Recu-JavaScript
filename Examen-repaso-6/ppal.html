@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido a mi equipo de fútbol favorito</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="equipo.js"></script>
+  </head>
+  <body>
+    <h1>Bienvenido a mi equipo de fútbol favorito</h1>
+
+    <div id="formulario">
+      <form id="equipoForm">
+        <label for="jugador">Jugador:</label>
+        <input type="text" id="jugador" name="jugador" required />
+
+        <label for="equipo">Equipo:</label>
+        <select id="equipo" name="equipo" required>
+          <option value="">Selecciona un equipo</option>
+          <option value="Sevilla">Sevilla</option>
+          <option value="Betis">Betis</option>
+        </select>
+
+        <label for="dorsal">Dorsal:</label>
+        <input type="number" id="dorsal" name="dorsal" required />
+
+        <input type="submit" id="mas" value="Añadir" />
+
+        <table id="tablaEquipo">
+          <thead>
+            <tr>
+              <th>Jugador</th>
+              <th>Equipo</th>
+              <th>Dorsal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se añadirán las filas dinámicamente con JavaScript -->
+          </tbody>
+        </table>
+        <input type="button" id="resumen" value="Equipo Completo" disabled />
+      </form>
+    </div>
+  </body>
+</html>

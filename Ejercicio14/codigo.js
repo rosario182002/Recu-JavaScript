@@ -16,3 +16,4 @@ while(!adivinado){
         alert("El número es menor. Intentalo de nuevo");
     }
 }
+
